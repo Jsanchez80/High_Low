@@ -19,12 +19,12 @@ for ($i = 1; $i <= 100; $i ++){
 	$number = $i; 
 	
 
-	if ($number % 3 == 0) {
-    	echo 'Fizz'. PHP_EOL;
+	if ($number % 3 == 0 && $number % 5 == 0) {
+    	echo 'FizzBuzz'. PHP_EOL;
 	} elseif ($number % 5 == 0) {
 	    echo 'Buzz' . PHP_EOL;
-	} elseif ($number % 3 && $number % 5) {
-	    echo 'FizzBuzz' . PHP_EOL;
+	} elseif ($number % 3 == 0)  {
+	    echo 'Fizz' . PHP_EOL;
 	}
 }
 /////////////////////////////////////////////////////////////////////
